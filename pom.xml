@@ -30,6 +30,17 @@
             <url>http://opensource.org/licenses/mit-license.php</url>
         </license>
     </licenses>
+         
+    <dependencies>
+        <dependency>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-collections</groupId>
+                    <artifactId>commons-collections</artifactId>
+                <exclusion>
+            <exclusions>
+        <dependency>
+    <dependencies>
 
     <build>
         <pluginManagement>

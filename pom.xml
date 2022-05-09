@@ -15,7 +15,7 @@
         <tapestry.version>5.3.8</tapestry.version>
         <struts2.version>2.5.26</struts2.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <net.sf.json-lib.version>2.4</net.sf.json-lib.version>
+        <net.sf.json-lib.version>2.3</net.sf.json-lib.version>
     </properties>
 
     <modules>

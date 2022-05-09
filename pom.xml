@@ -15,6 +15,7 @@
         <tapestry.version>5.3.8</tapestry.version>
         <struts2.version>2.5.26</struts2.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <net.sf.json-lib.version>2.4</net.sf.json-lib.version>
     </properties>
 
     <modules>
@@ -31,17 +32,25 @@
         </license>
     </licenses>
          
-    <dependencies>
-        <dependency>
-            <exclusions>
-                <exclusion>
-                    <groupId>commons-collections</groupId>
-                    <artifactId>commons-collections</artifactId>
-                <exclusion>
-            <exclusions>
-        <dependency>
-    <dependencies>
 
+    <dependencies>
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>${net.sf.json-lib.version}</version>
+            <classifier>jdk15</classifier>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+        <!--
+          <exclusions>
+            <exclusion>  
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+            </exclusion>
+          </exclusions> 
+        -->
+    </dependencies>
     <build>
         <pluginManagement>
             <plugins>
